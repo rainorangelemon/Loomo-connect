@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">loomo_speech_example</string>
+    <string name="main_text"> Say "Ok Loomo" to get started. \n \n
+                                Choose a phrase: \n \n
+                                [move/go/rotate/turn] [left/right/forward/backward]</string>
+    <string name="transfer">show images</string>
+</resources>

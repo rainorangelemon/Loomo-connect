@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="267dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/colorImage"
+                        android:layout_width="528dp"
+                        android:layout_height="176dp"
+                        android:layout_weight="0.5" />
+
+                    <ImageView
+                        android:id="@+id/depthImage"
+                        android:layout_width="528dp"
+                        android:layout_height="176dp"
+                        android:layout_weight="0.5" />
+
+                    <ImageView
+                        android:id="@+id/fishImage"
+                        android:layout_width="528dp"
+                        android:layout_height="176dp"
+                        android:layout_weight="0.5" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="158dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/robot_ip"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#d6d7d7"
+                        android:text="robot ip:"
+                        android:textColor="#000000"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/textView_ip"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/robot_ip"
+                        android:layout_alignParentStart="true"
+                        android:background="#fffbab"
+                        android:text="ip"
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/textView_message_received"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView_ip"
+                        android:layout_alignParentStart="true"
+                        android:background="#d6d7d7"
+                        android:text="message received:"
+                        android:textColor="#000000"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/textView_message_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView_message_received"
+                        android:text="id:"
+                        android:textColor="#000000"
+                        android:textSize="15sp" />
+
+
+                </RelativeLayout>
+
+                <TextureView
+                    android:id="@+id/trackSurface"
+                    android:layout_width="286dp"
+                    android:layout_height="175dp" />
+
+                <TextView
+                    android:layout_width="142dp"
+                    android:layout_height="112dp"
+                    android:text="@string/main_text" />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <Switch
+            android:id="@+id/transfer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:enabled="false"
+            android:text="@string/transfer" />
+
+    </LinearLayout>
+
+</android.widget.RelativeLayout>
